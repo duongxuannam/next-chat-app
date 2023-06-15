@@ -1,15 +1,14 @@
 interface User {
-  name: string;
-  email: string;
-  image: string;
-  id: string;
+  name: string
+  email: string
+  image: string
+  id: string
 }
 
 interface Chat {
   id: string
-  message: Message[]
+  messages: Message[]
 }
-
 
 interface Message {
   id: string
