@@ -5,9 +5,8 @@ type Props = {
 };
 
 const layout = (props: Props) => {
-  console.log("process.env.NEXTAUTH_URL", process.env.NEXTAUTH_URL);
   const tien11 = process.env.NEXTAUTH_URL;
-  const p2 = process.env.GOOGLE_CLIENT_ID;
+  const p2 = process.env.NEXTAUTH_SECRET;
   return (
     <>
       <p>{tien11}</p>
