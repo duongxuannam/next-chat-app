@@ -127,10 +127,11 @@ const MobileChatLayout: FC<MobileChatLayoutProps> = ({
                                     </li>
                                   );
                                 })}
-
                                 <li>
                                   <FriendRequestSidebarOptions
-                                    initUnseenRequest={unseenRequestCount}
+                                    initialUnseenRequestCount={
+                                      unseenRequestCount
+                                    }
                                     sessionId={session.user.id}
                                   />
                                 </li>
