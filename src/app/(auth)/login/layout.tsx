@@ -11,6 +11,7 @@ const layout = (props: Props) => {
     <>
       <p>{tien11}</p>
       <p>{p2}</p>
+      <p>um ba la</p>
       {props.children}
     </>
   );
