@@ -32,7 +32,6 @@ export const authOptions: NextAuthOptions = {
     GoogleProvider({
       clientId: getGoogleCredentials().clientId,
       clientSecret: getGoogleCredentials().clientSecret,
-      checks: ['nonce']
     }),
   ],
   callbacks: {
@@ -69,7 +68,6 @@ export const authOptions: NextAuthOptions = {
       return session
     },
     redirect(params) {
-      console.log(params)
       return '/dashboard'
     },
   },
