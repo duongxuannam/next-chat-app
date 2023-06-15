@@ -32,12 +32,8 @@ export const authOptions: NextAuthOptions = {
     GoogleProvider({
       clientId: getGoogleCredentials().clientId,
       clientSecret: getGoogleCredentials().clientSecret,
-      httpOptions: {
-        timeout: 40000,
-      },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user }) {
       const dbUserResult = (await fetchRedis('get', `user:${token.id}`)) as
