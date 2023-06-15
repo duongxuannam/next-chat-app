@@ -67,8 +67,9 @@ export const authOptions: NextAuthOptions = {
 
       return session
     },
-    redirect() {
-      return '/dashboard'
-    },
+    // redirect(params) {
+    //   console.log(params)
+    //   return '/dashboard'
+    // },
   },
 }
